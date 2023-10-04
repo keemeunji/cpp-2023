@@ -1,8 +1,9 @@
 // adder() 함수와 호출
+// 두 개의 정수를 전달받아 합을 리턴하는 함수 adder()를 작성하라.
 #include <iostream>
 using namespace std;
 
-// 두 개의 정수를 받아 합을 구하고 결과를 리턴하는 함수 adder()를 작성하라.
+// 두 개의 정수를 받아 합을 구하고 결과를 리턴하는 함수 adder
 int adder(int a, int b) {
   int sum;
   sum = a + b;
