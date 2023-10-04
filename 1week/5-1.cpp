@@ -2,20 +2,19 @@
 #include <iostream>
 using namespace std;
 
-// 두 개의 정수를 받아 합을 구하고 결과를 리턴하는 함수 adder
-int adder(int a, int b) {
-  int sum;
-  sum = a + b;
-  return sum;
-}
-
 int main() {
-  int n = adder(24567, 98374);  // 함수 adder() 호출
-  cout << "24567과 98374의 합은 " << n << "입니다\n";
+  int n[10];  // 정수 10개짜리 빈 메모리 공간
+  double d[] = {0.1, 0.2, 0,5, 3.9};  // 배열 d에 0.1, 0.2, 0.5, 3.9로 초기화
 
-  int a, b;
-  cout << "두 개의 정수를 입력하세요>>";
-  cin >> a >> b;
-  n = adder(a,b);  // 함수 adder() 호출
-  cout << a << "와 " << b << "의 합은 " << n << "입니다\n";
+  int i;
+  for(i=0; i<10; i++) n[i] = i*2  // 2의 배수로 n에 값을 채움
+  for(i=0; i<10; i++) cout << n[i] << ' ';  // 배열 n 출력
+  cout << "\n";
+
+  double sum = 0;
+  for(i=0; i<4; i++) {
+    sum += d[i]; {  // 배열 d의 합 계산
+  }
+
+  cout << "배열 d의 합은 " << sum;  // 배열 d의 합 출력
 }
