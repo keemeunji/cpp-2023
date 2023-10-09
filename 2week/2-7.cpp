@@ -8,8 +8,8 @@ int main() {
   string elvis("Elvis Presley");
   string singer;
 
-  cout << song + "를 부른 가수는 ";
-  cout << "(힌트 : 첫 글자는 " << elvis[0] << ")?";
+  cout << song + "를 부른 가수는? ";
+  cout << "(힌트 : 첫 글자는 " << elvis[0] << ")";
 
   getline(cin, singer);
   if(singer == elvis)
