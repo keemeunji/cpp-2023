@@ -8,6 +8,7 @@
 실행 결과를 참고하여 Ram.h, Ram.cpp, main.cpp로 헤더파일과 cpp 파일을 분리하여 프로그램을 완성하라. */
 
 // 클래스 선언부
+// Ram.h
 class Ram {
   char mem[100 * 1024];  // 100KB 메모리. 한 번지는 한 바이트이므로 char 타입 사용
   int size;
