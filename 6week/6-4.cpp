@@ -2,12 +2,14 @@
 #include <iostream>
 using namespace std;
 
-void f(char c = ' ', int l = 1) {
-  for(int j=0; j<l; j++) {
-    for(int i=0; i<10; i++)
-      cout << c;
-    cout << endl;
-  }
+void f (char c = ' ', int l = 1) {
+	for (int i = 0; i < l; i++) {
+		for (int j = 0; j < 10; j++)
+		{
+			cout << c;
+		}
+		cout << endl;
+	}
 }
 
 int main() {
