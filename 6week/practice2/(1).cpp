@@ -3,23 +3,23 @@
 #include <iostream>
 using namespace std;
 
-int big(int a, int b, int c=100) {
-	if (a > b) {
-		if (a > c) {
-			return c;
-		}
-		else {
-			return a;
-		}
-	}
-	else {
-		if (b > c) {
-			return c;
-		}
-		else {
-			return b;
-		}
-	}
+int big(int a, int b){
+    int max = 100;
+    int big = a;
+    if (big < b) 
+        big = b;
+    if (big > max) 
+        big = max;
+    return big;
+}
+int big(int a, int b, int c){
+    int max = c;
+    int big = a;
+    if (big < b) 
+        big = b;
+    if (big > max) 
+        big = max;
+    return big;
 }
 
 int main() {
